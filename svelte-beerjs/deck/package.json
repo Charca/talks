@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "mdx-talk",
+  "version": "2.3.2",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx && cp -r images dist/ ",
+    "help": "mdx-deck"
+  },
+  "devDependencies": {
+    "mdx-deck": "^1.7.0",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "raw-loader": "^0.5.1"
+  }
+}

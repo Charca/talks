@@ -2,7 +2,7 @@ import { CodeSurfer } from "mdx-deck-code-surfer";
 import { dark } from 'mdx-deck/themes'
 import nightOwl from "prism-react-renderer/themes/nightOwl"
 import Image from './components/image'
-import { Image as MDXImage } from 'mdx-deck'
+import { Image as MDXImage, Head } from 'mdx-deck'
 import { Split } from 'mdx-deck/layouts'
 
 export const theme = {
@@ -15,6 +15,10 @@ export const theme = {
     background: 'rgb(1, 22, 39)'
   }
 }
+
+<Head>
+  <title>Maxi Ferreira: Introducción a Svelte 3</title>
+</Head>
 
 # <👋> Hola
 
@@ -32,7 +36,9 @@ Julio 25, 2019<br/>
 
 ---
 
-![Svelte 2 Home](./images/svelte2-home.png)
+<img src="./images/svelte2-home.png" alt="Svelte 2 Home" style={{ width: '80%'}} />
+
+[Svelte 2 Homepage](https://v2.svelte.dev)
 
 ---
 
@@ -45,8 +51,9 @@ Julio 25, 2019<br/>
 
 ---
 
-![State of JS 2018](./images/state-of-js-2018.png)
+<img src="./images/state-of-js-2018.png" alt="State of JS 2019" style={{ width: '80%'}} />
 
+[State of JS 2018](https://2018.stateofjs.com/front-end-frameworks/other-libraries/)
 ---
 
 ![Screenshot de Computer, Build me an App](./images/computer-build-me-an-app.jpg)
@@ -61,7 +68,7 @@ Julio 25, 2019<br/>
 
 ---
 
-![You had my curiosity, but now you have my attention](./images/dicaprio-meme.png)
+<img src="./images/dicaprio-meme.png" alt="You had my curiosity, but now you have my attention" style={{ width: '140%', marginLeft: '-20%'}} />
 
 ---
 
@@ -87,7 +94,9 @@ Julio 25, 2019<br/>
 
 ---
 
-![Svelte 3 Home](./images/svelte3-home.png)
+<img src="./images/svelte3-home.png" alt="Svelte 3 Home" style={{ width: '80%'}} />
+
+[Svelte 3 Homepage](https://svelte.dev)
 
 ---
 
@@ -124,9 +133,10 @@ Julio 25, 2019<br/>
 
 ## Por qué importa?
 
-```
-"If debugging is the process of removing software bugs, then programming must be the process of putting them in."
 
+> _"If debugging is the process of removing software bugs, then programming must be the process of putting them in."_
+
+```
 — Edsger Dijkstra
 ```
 
@@ -140,15 +150,21 @@ Julio 25, 2019<br/>
 
 ---
 
-![Diagrama de Virtual DOM](./images/virtual-dom.png)
+<img src="./images/virtual-dom.png" alt="Diagrama de Virtual DOM" style={{ width: '90%'}} />
+
+##### Source: [Computer, build me an app](https://www.youtube.com/watch?v=qqt6YxAZoOc)
 
 ---
 
-![Diagrama sin Virtual DOM](./images/virtual-dom-after.png)
+<img src="./images/virtual-dom-after.png" alt="Diagrama sin Virtual DOM" style={{ width: '90%'}} />
+
+##### Source: [Computer, build me an app](https://www.youtube.com/watch?v=qqt6YxAZoOc) (edited)
 
 ---
 
-![How Svelte handle Changes](./images/svelte-changes.png)
+<img src="./images/svelte-changes.png" alt="How Svelte handle changes" style={{ width: '80%'}} />
+
+##### Source: [Rethinking Reactivity](https://www.youtube.com/watch?v=AdNJ3fydeao)
 
 ---
 
@@ -223,9 +239,13 @@ Julio 25, 2019<br/>
 
 ![Bundle Size](./images/bundle-size.png)
 
+##### Source: [A RealWorld Comparison of Front-End Frameworks with Benchmarks (2019 update)](https://www.freecodecamp.org/news/a-realworld-comparison-of-front-end-frameworks-with-benchmarks-2019-update-4be0d3c78075/)
+
 ---
 
-<video src="./images/svelte-performance-demo.mov" controls autoPlay loop />
+<video src="./images/svelte-performance-demo.mov" controls autoPlay loop style={{ width: '80%'}} />
+
+##### Source: [Rethinking Reactivity](https://www.youtube.com/watch?v=AdNJ3fydeao)
 
 ---
 
@@ -316,7 +336,7 @@ Julio 25, 2019<br/>
 
 export default Split
 
-<video src="./images/demo.mp4" controls loop />
+<video src="./images/demo.mp4" controls autoPlay loop />
 
 # Demo Time 🎉
 ## (Puede fallar 🤷‍♂️)
@@ -334,7 +354,7 @@ export default Split
 
 ---
 
-# Otros Projectos
+# Otros Proyectos
 
 - [Sapper](https://sapper.svelte.dev): el Next.js/Nuxt de Svelte.
 - [Svelte Native](https://svelte-native.technology/): framework de apps nativas basado en NativeScript.

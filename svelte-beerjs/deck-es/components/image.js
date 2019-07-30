@@ -3,11 +3,7 @@ import React from 'react'
 const Image = ({ src, css }) => (
   <img
     src={src}
-    css={{
-      ...{
-        width: '100%'
-      }, ...css
-    }} />
+    style={css} />
 )
 
 export default Image
